@@ -1,4 +1,6 @@
-## Personal site created with **Next.js** and **Tailwind CSS**. Credits to web3slinger.dev
+# Credits to web3slinger.dev
+
+Personal site created with **Next.js** and **Tailwind CSS**. 
 
 ## Getting Started
 
