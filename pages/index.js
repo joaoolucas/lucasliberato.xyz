@@ -33,9 +33,8 @@ const Home = () => {
     if (component === 'Projects') {
       return <Projects />
 
-    } else {
-      return <Info />
-    }
+    } 
+    
   }
 
   useEffect(() => {
