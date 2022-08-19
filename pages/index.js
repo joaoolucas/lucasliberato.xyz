@@ -8,8 +8,6 @@ import { GenericMeta } from '../components/GenericMeta'
 import { Navbar } from '../components/Navbar'
 import { Skills } from '../components/Skills'
 import { Projects } from '../components/Projects'
-import { Activity } from '../components/Activity'
-import { Info } from '../components/Info'
 import { SocialData } from '../data/socials'
 
 const Home = () => {
@@ -20,11 +18,10 @@ const Home = () => {
     return (
       <li
         className={`px-4 py-1 rounded-full text-sm font-semibold cursor-pointer transition hover:text-gray-500 hover:bg-gray-200 
-            ${
-              selected.toLowerCase() === item.toLowerCase()
-                ? 'text-white bg-gray-700 dark:text-gray-800 dark:bg-gray-300 hover:dark:bg-gray-600 hover:dark:text-gray-300'
-                : 'text-gray-500 bg-white dark:text-gray-300 dark:bg-black hover:dark:bg-gray-600 hover:dark:text-gray-300'
-            }`}
+            ${selected.toLowerCase() === item.toLowerCase()
+            ? 'text-white bg-gray-700 dark:text-gray-800 dark:bg-gray-300 hover:dark:bg-gray-600 hover:dark:text-gray-300'
+            : 'text-gray-500 bg-white dark:text-gray-300 dark:bg-black hover:dark:bg-gray-600 hover:dark:text-gray-300'
+          }`}
         onClick={() => setSelected(item)}
       >
         {item}
@@ -35,22 +32,21 @@ const Home = () => {
   const DisplayComponent = ({ component }) => {
     if (component === 'Projects') {
       return <Projects />
-    } else if (component === 'Activity') {
-      return <Activity />
+
     } else {
       return <Info />
     }
   }
 
   useEffect(() => {
-    if (mintCount === 0) {
+    if (mintCount === 1) {
       Router.push('/mint')
     }
   })
 
   return (
     <>
-      <GenericMeta title="web3slinger.dev" description="Buildooor." />
+      <GenericMeta title="Lucas Liberato" description="" />
 
       <FadeIn>
         <Navbar />
@@ -60,8 +56,8 @@ const Home = () => {
               <div className="mb-6">
                 <Image
                   className="rounded-xl"
-                  src="/img/smol-spider.png"
-                  alt="Smol Spider-Man"
+                  src="/img/profile-picture.png"
+                  alt="Profile Picture"
                   width={600}
                   height={600}
                 />
@@ -74,15 +70,14 @@ const Home = () => {
               <div className="flex flex-col mb-6 transition">
                 <h1 className="mb-2 text-4xl font-bold">{SocialData.NAME}</h1>
                 <p className="text-lg text-gray-600">
-                  25-year-old <span className="font-semibold">{SocialData.TITLE}</span> from
-                  Rochester, Minnesota.
+                  20-year-old <span className="font-semibold">{SocialData.TITLE}</span> based in
+                  São Paulo, Brazil.
                 </p>
               </div>
               <div className="flex flex-col w-full mb-6">
                 <ul className="flex gap-2 mb-6">
+                  
                   <ListItem item="Projects" />
-                  <ListItem item="Activity" />
-                  <ListItem item="Info" />
                 </ul>
                 <DisplayComponent component={selected} />
               </div>

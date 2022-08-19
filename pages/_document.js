@@ -14,12 +14,12 @@ class AppDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"
             rel="stylesheet"
           />
-          <meta property="og:url" content="https://web3slinger.dev" />
-          <meta property="og:site_name" content="web3slinger.dev" />
-          <meta property="og:image" content="/img/smol-spider.png" />
+          <meta property="og:url" content="https://lucasliberato.xyz" />
+          <meta property="og:site_name" content="Lucas Liberato" />
+          <meta property="og:image" content="/img/profile-picture.png" />
           <meta name="theme-color" content="#000000" />
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:image" content="https://web3slinger.dev/img/smol-spider.png" />
+          <meta name="twitter:image" content="https://lucasliberato.xyz/img/profile-picture.png" />
         </Head>
         <body className="text-black bg-white dark:bg-black dark:text-white">
           <Main />

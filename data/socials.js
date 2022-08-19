@@ -1,7 +1,7 @@
 export const SocialData = {
-  NAME: 'Patrick Torralba',
-  TITLE: 'software developer',
-  TWITTER: 'https://twitter.com/web3slinger',
-  GITHUB: 'https://github.com/web3slinger',
-  EMAIL: 'web3slinger@gmail.com',
+  NAME: 'Lucas Liberato',
+  TITLE: 'blockchain developer',
+  LINKEDIN: 'https://www.linkedin.com/in/lucasliberato/',
+  GITHUB: 'https://github.com/joaoolucas',
+  EMAIL: 'joaolucasliberato4@gmail.com',
 }

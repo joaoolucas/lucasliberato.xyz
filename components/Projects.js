@@ -1,5 +1,6 @@
 import { ProjectData } from '../data/projects'
 import { GiDinosaurRex, GiPayMoney, GiSpiderMask } from 'react-icons/gi'
+import { AiOutlineFilePdf } from 'react-icons/ai'
 import { RiCheckboxMultipleBlankFill } from 'react-icons/ri'
 import { FiExternalLink } from 'react-icons/fi'
 
@@ -16,6 +17,7 @@ const ProjectCard = ({ title, description, href, icon }) => {
         {icon === 'donate-heart' ? <GiPayMoney /> : null}
         {icon === 'layer-group' ? <RiCheckboxMultipleBlankFill /> : null}
         {icon === 'spider-web' ? <GiSpiderMask /> : null}
+        {icon === 'pdf' ? <AiOutlineFilePdf /> : null}
       </div>
       <div className="flex flex-col items-center w-full sm:items-start sm:w-11/12">
         <div className="flex items-center gap-2">

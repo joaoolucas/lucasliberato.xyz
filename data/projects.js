@@ -1,26 +1,9 @@
 export const ProjectData = [
   {
-    title: 'mintibbl',
-    description: 'Draw, guess, and mint with your frens!',
-    href: 'https://mintibbl.fun',
-    icon: 'dino-rex',
+    title: 'My Resume',
+    description: 'My experiences, education and a little about me.',
+    href: 'https://drive.google.com/file/d/1CAKm9ks3tGq1WpaDOIEmR35qQnSsFUF6/view?ths=true',
+    icon: 'pdf',
   },
-  {
-    title: 'cryptip.me',
-    description: 'The friendly way to accept tips in ETH.',
-    href: 'https://cryptip.me',
-    icon: 'donate-heart',
-  },
-  {
-    title: 'NFT Floor Diff',
-    description: 'NFT marketplace floor price difference aggregator.',
-    href: 'https://nftfloordiff.com',
-    icon: 'layer-group',
-  },
-  {
-    title: 'web3slinger.dev',
-    description: "The website you're currently on! Made with Next.js and Tailwind CSS.",
-    href: 'https://github.com/web3slinger/web3slinger.dev',
-    icon: 'spider-web',
-  },
+
 ]
